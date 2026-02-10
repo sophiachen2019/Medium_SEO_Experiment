@@ -10,7 +10,7 @@ This project is a dashboard designed to measure the impact of SEO metadata chang
 
 ## 📊 Dashboard Features
 
-The Streamlit dashboard (`dashboard.py`) provides real-time analysis across three key dimensions:
+The Streamlit dashboard (https://medium-seo-experiment.streamlit.app/) provides real-time analysis across three key dimensions:
 
 ### 1. Velocity Analysis
 Measures the speed of view accumulation (views/day) before and after the experiment start date.
