@@ -456,6 +456,10 @@ if 'views_total_indexed_control_min' in comparison_df.columns:
 
 st.plotly_chart(fig_lift, use_container_width=True)
 
+if 'Lift_Views' in comparison_df.columns and not pd.isna(comparison_df['Lift_Views'].iloc[-1]):
+    last_views_lift = comparison_df['Lift_Views'].iloc[-1]
+    st.metric("Total Views Lift (vs Control)", f"{last_views_lift:.2f}x")
+
 # Detailed Chart: Total Views
 if not viz_df.empty:
     fig_all_total = px.line(viz_df, x='date', y='views_total_indexed', color=color_col,
